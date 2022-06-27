@@ -71,7 +71,7 @@ class ViewController: UIViewController {
     }
     
     private func setupConstraints() {
-        stackView.translatesAutoresizingMaskIntoConstraints = false
+        
         
         stackView.snp.makeConstraints { make in
             make.top.equalTo(view.safeAreaLayoutGuide.snp.topMargin)

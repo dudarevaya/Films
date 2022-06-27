@@ -113,7 +113,6 @@ extension ViewController: UISearchBarDelegate {
         timer?.invalidate()
         timer = Timer.scheduledTimer(withTimeInterval: 0.5, repeats: false, block: { (_) in
             self.filmNetworkManager.fetchFilm(forFilm: urlString) { (searchResponse) in
-                
                     guard let searchResponse = searchResponse else { return }
                     self.welcome = searchResponse
                     self.tableView.reloadData()
